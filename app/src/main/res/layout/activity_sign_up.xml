@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/yellow"
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".SignUp">
@@ -14,9 +14,9 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
     <ImageView
-        android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:src="@drawable/online" />
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_baseline_fastfood_24" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -31,9 +31,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="0dp"
-        android:fontFamily="@font/antic"
+        android:fontFamily="@font/bungee"
         android:text="SignUp to Start"
-        android:textSize="16sp" />
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -61,7 +62,8 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="User Name">
+            android:hint="User Name"
+            android:logo="@drawable/ic_baseline_person_24">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -74,7 +76,8 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email">
+            android:hint="Email"
+            >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -117,8 +120,10 @@
             android:layout_marginBottom="5dp"
             android:background="@android:color/black"
             android:text="GO"
+            android:textSize="20dp"
             android:textColor="@android:color/white"
-            app:backgroundTint="#000000" />
+            app:backgroundTint="#000000"
+            android:textStyle="bold"/>
 
     <Button
         android:id="@+id/login_screen"
@@ -126,9 +131,10 @@
         android:layout_height="wrap_content"
         android:background="@android:color/background_light"
         android:text="Already Have an Account??LogIn "
+        android:textStyle="bold"
         android:textColor="@android:color/black"
-        app:backgroundTint="#FFFFFF" />
+        app:backgroundTint="#FFEB3B" />
 
 
-</LinearLayout>
-    </ScrollView>
+    </LinearLayout>
+</ScrollView>

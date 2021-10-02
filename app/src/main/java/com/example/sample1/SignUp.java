@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 
 import com.google.android.material.textfield.TextInputLayout;
@@ -22,6 +23,7 @@ public class SignUp extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_sign_up);
 
         regName=findViewById(R.id.name);
@@ -50,7 +52,7 @@ public class SignUp extends AppCompatActivity {
 
                 UserHelperClass helperClass= new UserHelperClass(name,userName,email,phone,password);
 
-                reference.child(phone).setValue(helperClass);
+                reference.child(userName).setValue(helperClass);
 
             }
         });
